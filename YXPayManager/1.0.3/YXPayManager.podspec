@@ -33,5 +33,5 @@ TODO: Add long description of the pod here.
    s.source_files  = 'YXPayManager/YXPayManager/Classes/*.{h,m}'
 
    s.frameworks = 'UIKit', 'Foundation'
-   s.dependency 'YXPaylibraryManager'
+   s.dependency 'YXPaylibraryManager', '2.0.5'
 end
