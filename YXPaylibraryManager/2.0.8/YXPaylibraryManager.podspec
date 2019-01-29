@@ -9,26 +9,26 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = '8.0'
 
-  spec.subspec 'Alipay' do |Alipay|
-    Alipay.resource = 'YXPaylibraryManager/Alipay/Assets/AlipaySDK.bundle'
-    Alipay.libraries = 'stdc++','z','sqlite3'
-    Alipay.vendored_frameworks = 'YXPaylibraryManager/Alipay/Frameworks/AlipaySDK.framework' 
-    Alipay.frameworks = 'UIKit', 'Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
+  spec.subspec 'Alipay' do |alipay|
+    alipay.resource = 'YXPaylibraryManager/Alipay/Assets/AlipaySDK.bundle'
+    alipay.libraries = 'stdc++','z','sqlite3'
+    alipay.vendored_frameworks = 'YXPaylibraryManager/Alipay/Frameworks/AlipaySDK.framework' 
+    alipay.frameworks = 'UIKit', 'Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
   end
    
-  spec.subspec 'Lianpay' do |Lianpay|
-    Lianpay.resource = 'YXPaylibraryManager/Lianpay/Assets/walletResources.bundle'
-    Lianpay.vendored_libraries = 'YXPaylibraryManager/Lianpay/Frameworks/libPaySdkColor.a'
-    Lianpay.source_files = 'YXPaylibraryManager/Lianpay/LLPayClass/*.{h}'
-    Lianpay.libraries = 'stdc++','z','sqlite3'
-    Lianpay.frameworks = 'UIKit', 'Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
+  spec.subspec 'Lianpay' do |lianpay|
+    lianpay.resource = 'YXPaylibraryManager/Lianpay/Assets/walletResources.bundle'
+    lianpay.vendored_libraries = 'YXPaylibraryManager/Lianpay/Frameworks/libPaySdkColor.a'
+    lianpay.source_files = 'YXPaylibraryManager/Lianpay/LLPayClass/*.{h}'
+    lianpay.libraries = 'stdc++','z','sqlite3'
+    lianpay.frameworks = 'UIKit', 'Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
   end
 
-  spec.subspec 'Wxpay' do |Wxpay|
-    Wxpay.source_files = 'YXPaylibraryManager/Wxpay/*.{h,m}'
-    Wxpay.vendored_libraries = 'YXPaylibraryManager/Wxpay/Frameworks/libWeChatSDK.a'
-    Wxpay.libraries = 'stdc++','z','sqlite3'
-    Wxpay.frameworks = 'UIKit', 'Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
+  spec.subspec 'Wxpay' do |wxpay|
+    wxpay.source_files = 'YXPaylibraryManager/Wxpay/*.{h,m}'
+    wxpay.vendored_libraries = 'YXPaylibraryManager/Wxpay/Frameworks/libWeChatSDK.a'
+    wxpay.libraries = 'stdc++','z','sqlite3'
+    wxpay.frameworks = 'UIKit', 'Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
   end
 
   spec.frameworks = 'UIKit', 'Foundation'
